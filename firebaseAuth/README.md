@@ -1,5 +1,8 @@
 # FirebaseAuth
 
+###### IMPORTANT
+Must add your own creds for firebase via. a Globals/api-creds.ts file in the root of the application.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
 ## Development server
