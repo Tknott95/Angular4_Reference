@@ -12,7 +12,7 @@ export const SAVED_ACTIVITIES: IActivity[] = [
 {
    "id": 2,
    "name": 'Industrial Park',
-   "date": new Date('06/04/2017'),
+   "date": new Date('07/04/2017'),
    "gpxData": '../../assets/gpx/1.gpx',
    "distance": 1.2,
    "comments": 'Cool and windy.'
@@ -20,7 +20,7 @@ export const SAVED_ACTIVITIES: IActivity[] = [
  {
    "id": 3,
    "name": 'Forest Route',
-   "date": new Date('06/05/2017'),
+   "date": new Date('05/05/2017'),
    "gpxData": '../../assets/gpx/2.gpx',
    "distance": 3.2,
    "comments": 'Evening run.'
@@ -32,5 +32,13 @@ export const SAVED_ACTIVITIES: IActivity[] = [
    "gpxData": '../../assets/gpx/4.gpx',
    "distance": 8.4,
    "comments": 'Cool and windy by the lake.'
+ },
+ {
+   "id": 5,
+   "name": 'Beach 7',
+   "date": new Date('07/28/2017'),
+   "gpxData": '../../assets/gpx/4.gpx',
+   "distance": 8.4,
+   "comments": 'Sketchy af'
  }
 ]

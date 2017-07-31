@@ -9,14 +9,20 @@ import { ActivityService } from '../../services/activity/activity.service';
 })
 export class ActivityListComponent implements OnInit {
   activities: IActivity[];
-  totalActivites: number
+  totalActivities: number
   totalDistance: number
+  firstDate: Date
 
   constructor(private _activityService: ActivityService) { 
 
   }
 
   ngOnInit() {
+    this.activities = this._activityService.getActivites();
+  
+    this.totalActivities = this._activityService.getTotalActivities(this.activities);
+    this.totalDistance = this._activityService.getTotalDistance(this.activities);
+    this.firstDate = this._activityService.getFirstDate(this.activities);
   }
 
 }
