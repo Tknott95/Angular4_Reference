@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './auth/login.component';
 
 import { AngularFireModule } from 'angularfire2';
 
