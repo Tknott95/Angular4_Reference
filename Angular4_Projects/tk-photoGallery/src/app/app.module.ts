@@ -6,6 +6,9 @@ import { HttpModule } from '@angular/http';
 /* Third Party Pkgs */
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
+/* CUSTOM PIPES */
+import { PhotoFilterPipe } from './pipes/photo-filter.pipe';
+
 /* SERVICES */
 import { ImageService } from './services/image.service';
 
@@ -21,7 +24,8 @@ import { ImageDetailComponent } from './components/gallery/images/image-detail/i
     AppComponent,
     NavbarComponent,
     GalleryComponent,
-    ImageDetailComponent
+    ImageDetailComponent,
+    PhotoFilterPipe
   ],
   imports: [
     BrowserModule,

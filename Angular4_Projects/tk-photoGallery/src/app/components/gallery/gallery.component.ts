@@ -10,7 +10,7 @@ import { ImageService } from './../../services/image.service';
 export class GalleryComponent implements OnInit, OnChanges {
 
   /* Will use to control pic filters */
-  @Input() filterBy?: string = '';
+  @Input() filterBy?: string = 'all';
 
   galleryTitle = 'Recent Photos';
   visibleImages: any[] = [];
