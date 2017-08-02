@@ -1,12 +1,16 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
 import { ImageService } from './../../services/image.service';
 
+/* @AUTHOR tk@trevorknott.io */
 @Component({
   selector: 'tk-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss']
 })
-export class GalleryComponent implements OnInit {
+export class GalleryComponent implements OnInit, OnChanges {
+
+  /* Will use to control pic filters */
+  @Input() filterBy?: string = '';
 
   galleryTitle = 'Recent Photos';
   visibleImages: any[] = [];
@@ -16,6 +20,10 @@ export class GalleryComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  ngOnChanges() {
+    this.visibleImages = this._imageService.getImages();
   }
 
 }

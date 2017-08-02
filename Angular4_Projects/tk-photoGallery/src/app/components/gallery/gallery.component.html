@@ -1,6 +1,12 @@
 <h2>{{ galleryTitle }}</h2>
 
 <div class="row images-row">
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy=='all'">All</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='frameworks'" (click)="filterBy=='frameworks'">Frameworks</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='langs'" (click)="filterBy=='langs'" >Languages</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy=='algos'" (click)="filterBy=='algos'">Algorithms</button>
+
+
     <ul id="thumbnails">
         <li *ngFor='let img of visibleImages'>
             <img src="{{ img.url }}" alt="" class="mock-img" width="220" height="180">
