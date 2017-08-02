@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { ImageDetailComponent } from './components/gallery/images/image-detail/image-detail.component';
 
 /* @AUTHOR tk@trevorknott.io */
 
@@ -13,7 +14,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    GalleryComponent
+    GalleryComponent,
+    ImageDetailComponent
   ],
   imports: [
     BrowserModule,
