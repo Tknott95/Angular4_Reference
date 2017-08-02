@@ -4,13 +4,14 @@ This is an Angular4 project which is actively filtering through photos and harne
 
 
 ## Gallery Landing Page
-![Lang Filter Image](http://i1376.photobucket.com/albums/ah11/asciiAlien/filtered-gal_zps3sulabx6.png)
+![Landing Page Image](http://i1376.photobucket.com/albums/ah11/asciiAlien/gall-landing_zpsffxvgydk.png)
+
 
 ## Gallery w/ Languages Filter
-![alt text](https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg)
+![Lang Filter Image](http://i1376.photobucket.com/albums/ah11/asciiAlien/filtered-gal_zps3sulabx6.png)
 
 ## Gallery w/ Single Photo Fetch
-![alt text](https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg)
+![Single Image Fetch Image](http://i1376.photobucket.com/albums/ah11/asciiAlien/single_fetch_zpsbefh8f9e.png)
 
 ## Uses Custom Pipes, Services, Http, RXJS, Algrithms, Filtering, Bootstrap, SCSS, Webpack, etc, 
 
