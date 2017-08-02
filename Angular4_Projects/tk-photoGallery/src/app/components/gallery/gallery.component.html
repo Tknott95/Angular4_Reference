@@ -1,1 +1,9 @@
 <h2>{{ galleryTitle }}</h2>
+
+<div class="row">
+    <ul id="thumbnails">
+        <li *ngFor='let img of visibleImages'>
+            <h1>{{ img.url }}</h1>
+        </li>
+    </ul>
+</div>
