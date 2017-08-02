@@ -5,13 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 /* @AUTHOR tk@trevorknott.io */
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
