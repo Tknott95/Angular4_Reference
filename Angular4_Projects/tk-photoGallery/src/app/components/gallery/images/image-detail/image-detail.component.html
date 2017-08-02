@@ -1,3 +1,17 @@
-<p>
-  image-detail works!
-</p>
+<div class="row">
+  <div class="col-md-12">
+    <div [ngStyle]="{ 'background-image': 'url('+ my_single_image.url +')' }" class="img-container"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 caption-row">
+    <span id="caption">
+      {{ my_single_image.caption }}
+    </span>
+    <br>
+    <button type="button" [routerLink]="['/gallery']" class="btn btn-secondary btn-block">
+      Go Back
+    </button>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-<h2>{{ galleryTitle }}</h2>
+<h2>{{ galleryTitle }} : {{ filterBy | uppercase }}</h2>
 
 <div class="row images-row">
     <button class="btn btn-lg btn-info" [class.active]="filterBy==='all'" (click)="filterBy='all'">All</button>
@@ -9,7 +9,9 @@
 
     <ul id="thumbnails">
         <li *ngFor='let img of (visibleImages | photoFilter:filterBy)'>
-            <img src="{{ img.url }}" alt="" class="mock-img animated fadeIn" width="220" height="180">
+            <a [routerLink]="['/image', img.id]" >
+                <img src="{{ img.url }}" alt="" class="mock-img animated fadeIn" width="220" height="180">
+            </a>
         </li>
     </ul>
 </div>

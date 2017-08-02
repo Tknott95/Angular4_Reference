@@ -10,7 +10,7 @@ import { myRoutes } from './routes';
 /* Third Party Pkgs */
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
-/* CUSTOM PIPES */
+/* PIPES */
 import { PhotoFilterPipe } from './pipes/photo-filter.pipe';
 
 /* SERVICES */
