@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageService } from './../../services/image.service';
 
 @Component({
   selector: 'tk-gallery',
@@ -8,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   galleryTitle = 'Recent Photos';
+  visibleImages: any[] = [];
 
-  constructor() { }
+  constructor( private _imageService: ImageService ) { 
+    this.visibleImages = this._imageService.getImages();
+  }
 
   ngOnInit() {
   }
