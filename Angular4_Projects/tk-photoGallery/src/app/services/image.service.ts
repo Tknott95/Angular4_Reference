@@ -1,7 +1,7 @@
 /* Imported Mock Data for now,
    May connect to my master golang backend and fileserver microsrvice api instead
 */
-import { MOCK_IMAGES } from './mock-data/images';
+import { MOCK_IMAGES } from '../mock-data/images';
 import { Injectable } from '@angular/core';
 
 /* @AUTHOR tk@trevorknott.io */

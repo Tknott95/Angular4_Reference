@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageService } from './../../../../services/image.service';
 
 @Component({
   selector: 'tk-image-detail',

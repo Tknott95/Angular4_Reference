@@ -1,15 +1,21 @@
+/* Angular Packages */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 import { HttpModule } from '@angular/http';
 
+/* Third Party Pkgs */
+import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
+
+/* SERVICES */
+import { ImageService } from './services/image.service';
+
+/* COMPONENTS */
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ImageDetailComponent } from './components/gallery/images/image-detail/image-detail.component';
 
 /* @AUTHOR tk@trevorknott.io */
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +28,9 @@ import { ImageDetailComponent } from './components/gallery/images/image-detail/i
     AlertModule.forRoot(),
     HttpModule
   ],
-  providers: [],
+  providers: [
+    ImageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
