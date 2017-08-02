@@ -1,14 +1,23 @@
-.images-row {
-    ul#thumbnails {
-        padding: 0;
-        width: 1200px;
-        margin: 20px auto;
-        li {
-            display: inline;
-            .mock-img {
-                margin: 6px;
-                border: 4px solid #eee;
-                box-shadow: #555 1px 1px 8px 1px;
+#gallery-wrapper {
+    h2,
+    .filter-name {
+        display: inline;
+    }
+    .filter-name {
+        font-family: 'Open Sans';
+    }
+    .images-row {
+        ul#thumbnails {
+            padding: 0;
+            width: 1200px;
+            margin: 20px auto;
+            li {
+                display: inline;
+                .mock-img {
+                    margin: 6px;
+                    border: 4px solid #eee;
+                    box-shadow: #555 1px 1px 8px 1px;
+                }
             }
         }
     }

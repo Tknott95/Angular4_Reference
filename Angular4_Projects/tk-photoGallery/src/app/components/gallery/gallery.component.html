@@ -1,17 +1,20 @@
-<h2>{{ galleryTitle }} : {{ filterBy | uppercase }}</h2>
+<div id="gallery-wrapper">
+  <h2>{{ galleryTitle }}</h2> <span class="filter-name"> ||  {{ filterBy | uppercase }}</span>
 
-<div class="row images-row">
+  <div class="row images-row">
     <button class="btn btn-lg btn-info" [class.active]="filterBy==='all'" (click)="filterBy='all'">All</button>
     <button class="btn btn-lg btn-info" [class.active]="filterBy==='frameworks'" (click)="filterBy='frameworks'">Frameworks</button>
-    <button class="btn btn-lg btn-info" [class.active]="filterBy==='languages'" (click)="filterBy='languages'" >Languages</button>
+    <button class="btn btn-lg btn-info" [class.active]="filterBy==='languages'" (click)="filterBy='languages'">Languages</button>
     <button class="btn btn-lg btn-info" [class.active]="filterBy==='algorithms'" (click)="filterBy='algorithms'">Algorithms</button>
 
 
     <ul id="thumbnails">
-        <li *ngFor='let img of (visibleImages | photoFilter:filterBy)'>
-            <a [routerLink]="['/image', img.id]" >
+      <li *ngFor='let img of (visibleImages | photoFilter:filterBy)'>
+        <a [routerLink]="['/image', img.id]">
                 <img src="{{ img.url }}" alt="" class="mock-img animated fadeIn" width="220" height="180">
             </a>
-        </li>
+      </li>
     </ul>
+  </div>
+
 </div>
