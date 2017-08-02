@@ -4,7 +4,7 @@ This is an Angular4 project which is actively filtering through photos and harne
 
 
 ## Gallery Landing Page
-![alt text](http://photobucket.com/gallery/user/asciiAlien/media/bWVkaWFJZDo5NzM2NjU3/?ref=1)
+![Lang Filter Image](http://i1376.photobucket.com/albums/ah11/asciiAlien/filtered-gal_zps3sulabx6.png)
 
 ## Gallery w/ Languages Filter
 ![alt text](https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg)
