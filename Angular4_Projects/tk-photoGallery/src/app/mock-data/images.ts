@@ -5,18 +5,7 @@ export const MOCK_IMAGES = [
     "caption": "Phoenix",
     "url": "assets/img/frameworks/phoenix.png"
   },
-  {
-    "id": 2,
-    "category": "frameworks",
-    "caption": "Rails",
-    "url": "assets/img/frameworks/rails.jpg"
-  },
-  {
-    "id": 3,
-    "category": "frameworks",
-    "caption": "Silenium",
-    "url": "assets/img/frameworks/silenium.png"
-  },
+  
   {
     "id": 4,
     "category": "frameworks",
@@ -48,18 +37,6 @@ export const MOCK_IMAGES = [
     "url": "assets/img/langs/csharp.png"
   },
   {
-    "id": 9,
-    "category": "languages",
-    "caption": "Java",
-    "url": "assets/img/langs/java.png"
-  },
-  {
-    "id": 10,
-    "category": "languages",
-    "caption": "Python",
-    "url": "assets/img/langs/python.jpg"
-  },
-  {
     "id": 11,
     "category": "languages",
     "caption": "Ruby",
@@ -70,6 +47,30 @@ export const MOCK_IMAGES = [
     "category": "languages",
     "caption": "TypeScript",
     "url": "assets/img/langs/typescript.png"
+  },
+  {
+    "id": 2,
+    "category": "frameworks",
+    "caption": "Rails",
+    "url": "assets/img/frameworks/rails.jpg"
+  },
+  {
+    "id": 3,
+    "category": "frameworks",
+    "caption": "Silenium",
+    "url": "assets/img/frameworks/silenium.png"
+  },
+  {
+    "id": 9,
+    "category": "languages",
+    "caption": "Java",
+    "url": "assets/img/langs/java.png"
+  },
+  {
+    "id": 10,
+    "category": "languages",
+    "caption": "Python",
+    "url": "assets/img/langs/python.jpg"
   },
   {
     "id": 13,

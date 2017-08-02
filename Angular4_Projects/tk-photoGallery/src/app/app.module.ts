@@ -2,6 +2,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+
+/* My Apps Routes*/
+import { myRoutes } from './routes';
 
 /* Third Party Pkgs */
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
@@ -30,7 +34,8 @@ import { ImageDetailComponent } from './components/gallery/images/image-detail/i
   imports: [
     BrowserModule,
     AlertModule.forRoot(),
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(myRoutes)
   ],
   providers: [
     ImageService
