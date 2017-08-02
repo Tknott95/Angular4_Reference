@@ -20,7 +20,8 @@
       "prefix": "tk",
       "styles": [
         "styles.scss",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/animate.min.css/animate.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
