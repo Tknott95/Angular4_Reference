@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  title = 'Trevs Photo Gallery!';
+  navbarBrand = 'Trevs Photo Gallery!';
 
   constructor() { }
 
