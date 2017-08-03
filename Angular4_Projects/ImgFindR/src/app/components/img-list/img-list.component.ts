@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ImageService } from '../../services/image/image.service';
 
+/* @AUTHOR tk@trevorknott.io */
 @Component({
   selector: 'tk-img-list',
   templateUrl: './img-list.component.html',
