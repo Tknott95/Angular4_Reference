@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url('https://pixnio.com/free-images/2017/02/27/2017-02-27-07-48-01.jpg');
+    background-size: cover;
+    background-color: black;
+    #main-content {
+        background-color: rgba(black, 0.5);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        left: 0%;
+    }
+}
