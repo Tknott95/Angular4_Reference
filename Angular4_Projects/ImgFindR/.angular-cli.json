@@ -19,7 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "tk",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

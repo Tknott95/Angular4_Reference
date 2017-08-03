@@ -1,0 +1,30 @@
+#item-list-section {
+    padding-top: 80px;
+    color: purple;
+    opacity: .9;
+
+    h1 {
+        font-family: 'Times New Roman';
+    }
+
+    div.md-progress-bar {
+        padding-top: 150px;
+    }
+
+ input,
+    h5,h1 {
+        text-align: center;
+    }
+ md-grid-tile {
+     opacity: .8;
+    
+    .example-card {
+        width: 400px;
+        box-shadow: solid black 1px 1px;
+    }
+    .example-header-image {
+        height: 100%;
+    }
+    
+ }
+}

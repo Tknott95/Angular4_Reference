@@ -1,18 +1,54 @@
 <div id="item-list-section">
 
-  <h5>Button Click</h5>
-  <input type="text" [(ngModel)]="query_to_search" class="search">
-  <button type="button" (click)="searchImages(query_to_search)">{{ imgSearchBtn }}</button>
+  <h1><strong>ImageFindR Angular4 Edition</strong></h1>
 
   <h5>Start Typing To Search</h5>
-  <input type="text" [(ngModel)]="xx" class="search" (keyup)="searchImages(xx)">
+  <input type="text" align="center" placeholder="Type anything to begin search... " [(ngModel)]="xx" class="form-control input-lg"
+    (keyup)="searchImages(xx)">
 
-  <br>
-  <hr>
-  <br>
-
-  <div *ngFor='let img of images' class="image-container">
-    <img src="{{ img.webformatURL }}" alt="">
+  <!-- If we are querying for images display this content -->
+  <div *ngIf="isQuerying">
+    <md-progress-bar mode="indeterminate"></md-progress-bar>
   </div>
 
-</div>
+  <div class="container-fluid">
+    <div class="col-md-12">
+      <md-grid-list cols="3" rowHeight="1:1">
+
+        <div *ngFor='let img of images' class="image-container">
+
+          <md-grid-tile>
+
+            <div class="container-fluid">
+              <md-card class="animated fadeInUp example-card">
+                <img md-card-image src="{{ img.webformatURL }}">
+                <md-card-content>
+                  <p class="img-content"><strong>Tags:</strong>
+                    <md-chip-list>
+                      <md-chip>{{ img.tags }}</md-chip>
+                    </md-chip-list>
+                  </p>
+                  <p class="img-content"><strong>User:</strong> {{ img.user }}</p>
+                  <p class="img-content"><strong>Comments:</strong> {{ img.comments }}</p>
+                  <p class="img-content"><strong>Likes:</strong> {{ img.likes }}</p>
+                </md-card-content>
+                <md-card-actions>
+                  <p>Link for hosting this image</p>
+                  <input disabled value="{{ img.webformatURL }}" type="text">
+                </md-card-actions>
+              </md-card>
+            </div>
+
+          </md-grid-tile>
+
+
+
+
+
+
+
+
+        </div>
+      </md-grid-list>
+
+    </div>
