@@ -1,6 +1,8 @@
 /* Base Angular Imports */
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 /* Services */
 import { ImageService } from './services/image/image.service';
@@ -16,7 +18,9 @@ import { ImgListComponent } from './components/img-list/img-list.component';
     ImgListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    FormsModule
   ],
   providers: [
     ImageService,
