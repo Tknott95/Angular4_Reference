@@ -1,1 +1,18 @@
-<button (click)="searchImages('new york')" >{{ imgSearchBtn }}</button>
+<div id="item-list-section">
+
+  <h5>Button Click</h5>
+  <input type="text" [(ngModel)]="query_to_search" class="search">
+  <button type="button" (click)="searchImages(query_to_search)">{{ imgSearchBtn }}</button>
+
+  <h5>Start Typing To Search</h5>
+  <input type="text" [(ngModel)]="xx" class="search" (keyup)="searchImages(xx)">
+
+  <br>
+  <hr>
+  <br>
+
+  <div *ngFor='let img of images' class="image-container">
+    <img src="{{ img.webformatURL }}" alt="">
+  </div>
+
+</div>
