@@ -1,9 +1,11 @@
+/* Base Angular Imports */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 /* Services */
 import { ImageService } from './services/image/image.service';
 
+/* Components */
 import { AppComponent } from './app.component';
 import { ImgListComponent } from './components/img-list/img-list.component';
 

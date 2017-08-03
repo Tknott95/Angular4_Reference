@@ -15,4 +15,12 @@ export class ImgListComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchImages(query_to_make: string) {
+    return this._imageService.getImage(query_to_make).subscribe(
+      data => console.log(data),
+      err => console.log(err),
+      () => console.log("Request Complete!")
+    )
+  }
+
 }

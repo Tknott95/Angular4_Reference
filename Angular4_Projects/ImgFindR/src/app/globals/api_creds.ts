@@ -1,4 +1,5 @@
 import { PIXABAY_CREDS } from '../../../globals/api_creds';
+import { Http, Headers } from '@angular/http';
 
 /* @AUTHOR tk@trevorknott.io */
 /* Chained through a private folder, may be a stupid way of doing this */

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tk';
+  app_title: string = 'ImgFindR';
 }
